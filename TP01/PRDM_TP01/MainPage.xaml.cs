@@ -29,6 +29,6 @@ public partial class MainPage : ContentPage
 
     private void OnCreditsClicked(object sender, EventArgs e)
     {
-        CreditsLabel.Text = $"Vinicius do Nascimento Ayres (CB3025675)\nMatheus Leandro Terra Luciano (CB3024881)";
+        CreditsLabel.Text = $"Érica Barbosa Pereira Lobo CB3012701";
     }
 }
