@@ -1,0 +1,90 @@
+<!-- Érica Barbosa Pereira Lobo CB3012701 -->
+
+<?xml version="1.0" encoding="utf-8" ?>
+    
+<ContentPage xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="CBTPRDM_TP01.MainPage">
+
+    <ScrollView>
+        <VerticalStackLayout
+            Spacing="25"
+            Padding="30,0"
+            VerticalOptions="Center">
+
+            <Label
+                Text="Aplicação Teste"
+                SemanticProperties.HeadingLevel="Level1"
+                FontSize="32"
+                HorizontalOptions="Center"
+                TextColor="Black" />
+
+            <Grid 
+                ColumnDefinitions="Auto, *" 
+                RowDefinitions="Auto, Auto" 
+                Padding="20" 
+                RowSpacing="15"
+                ColumnSpacing="15"
+                HorizontalOptions="Center">
+
+                <Label
+                    Text="ID:"
+                    FontSize="18"
+                    VerticalTextAlignment="Center"
+                    TextColor="Black"
+                    Grid.Row="0" Grid.Column="0" />
+
+                <Entry
+                    x:Name="ID"
+                    FontSize="16"
+                    VerticalTextAlignment="Center"
+                    WidthRequest="250"
+                    TextColor="Grey"
+                    Grid.Row="0" Grid.Column="1" />
+
+                <Label
+                    Text="Pass:"
+                    FontSize="18"
+                    VerticalTextAlignment="Center"
+                    TextColor="Black" 
+                    Grid.Row="1" Grid.Column="0" />
+
+                <Entry
+                    x:Name="Pass"
+                    FontSize="16"
+                    VerticalTextAlignment="Center"
+                    WidthRequest="250"
+                    TextColor="Grey"
+                    Grid.Row="1" Grid.Column="1" />
+            </Grid>
+
+
+            <Button
+                x:Name="OkBtn"
+                Text="OK"
+                Clicked="OnOkClicked"
+                HorizontalOptions="Center" />
+
+            <Button
+                x:Name="CleanBtn"
+                Text="Limpar"
+                Clicked="OnCleanClicked"
+                HorizontalOptions="Center" />
+
+            <Button
+                x:Name="CreditsBtn"
+                Text="Créditos"
+                Clicked="OnCreditsClicked"
+                HorizontalOptions="Center" />
+
+            <Label
+                x:Name="CreditsLabel"
+                Text=""
+                FontSize="16"
+                HorizontalOptions="Center"
+                TextColor="Gray" />
+
+        </VerticalStackLayout>
+    </ScrollView>
+
+</ContentPage>
