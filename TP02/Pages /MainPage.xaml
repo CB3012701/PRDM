@@ -1,0 +1,70 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="TarefasApp.MainPage"
+             Title="Home"
+             BackgroundColor="#f3fcf2">
+
+    <AbsoluteLayout>
+
+        <StackLayout AbsoluteLayout.LayoutFlags="All"
+                     AbsoluteLayout.LayoutBounds="0, 0, 1, 1"
+                     Padding="20" 
+                     Spacing="20">
+
+            <CollectionView 
+                x:Name="listTasks"
+                VerticalOptions="FillAndExpand"
+                ItemsSource="{Binding Tasks}" 
+                SelectionMode="None">
+                <CollectionView.ItemTemplate>
+                    <DataTemplate>
+                        <Border BackgroundColor="White" Padding="10" Margin="0, 5" StrokeShape="RoundRectangle 8" StrokeThickness="1" Stroke="#C8C8C8">
+                            <StackLayout Orientation="Horizontal">
+                                <StackLayout Orientation="Vertical" HorizontalOptions="FillAndExpand" Spacing="2" Padding="0, 0, 10, 0">
+                                    <Label Text="{Binding Title}" TextColor="#000000" FontAttributes="Bold" FontSize="16"/>
+                                    <Label Text="{Binding Description}" TextColor="#6E6E6E" FontSize="12" MaxLines="1" LineBreakMode="TailTruncation"/>
+                                </StackLayout>
+                                <Button Text="Detalhes" FontSize="12" Clicked="OnViewDetailsClicked" CommandParameter="{Binding .}" BackgroundColor="#5a8b41" TextColor="White" CornerRadius="4" VerticalOptions="Center" HeightRequest="35" WidthRequest="100" HorizontalOptions="End"/>
+                            </StackLayout>
+                        </Border>
+                    </DataTemplate>
+                </CollectionView.ItemTemplate>
+            </CollectionView>
+
+            <Label x:Name="lblNoTasks"
+                   Text="Nenhuma atividade cadastrada. Clique em 'Adicionar Tarefa' para começar!"
+                   IsVisible="False"
+                   TextColor="#6E6E6E"
+                   HorizontalOptions="Center"
+                   VerticalOptions="Start"
+                   Margin="0, 50, 0, 0"/>
+
+            <Button
+                Margin="10, 10, 10, 50"
+                Text="Adicionar Tarefa"
+                Clicked="OnAddTask"
+                BackgroundColor="#38761d" 
+                TextColor="White"
+                CornerRadius="4"
+                HeightRequest="50"
+                WidthRequest="300"/> 
+
+        </StackLayout>
+
+        <Border AbsoluteLayout.LayoutFlags="PositionProportional, WidthProportional"
+                AbsoluteLayout.LayoutBounds="0.5, 1, 1, AutoSize"
+                BackgroundColor="#38761d"
+                StrokeThickness="0" 
+                Padding="10, 8">
+            <Label Text="Desenvolvido por Laysa Bernardes - CB3024873 e Lucas Lopes - CB3025284"
+                   FontSize="12"
+                   TextColor="White"
+                   HorizontalOptions="Center"
+                   VerticalOptions="Center"
+                   HorizontalTextAlignment="Center"
+                   Margin="0" />
+
+        </Border>
+    </AbsoluteLayout>
+</ContentPage>
