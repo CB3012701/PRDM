@@ -1,0 +1,68 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="TarefasApp.Pages.DetailsPage"
+             Title="Detalhes da Tarefa"
+             BackgroundColor="#f3fcf2">
+
+    <AbsoluteLayout>
+
+        <ScrollView AbsoluteLayout.LayoutFlags="All" 
+                    AbsoluteLayout.LayoutBounds="0,0,1,1">
+
+            <Grid VerticalOptions="FillAndExpand">
+
+                <Grid VerticalOptions="Center" HorizontalOptions="Center" >
+
+                    <Border BackgroundColor="White" 
+                            Padding="30" 
+                            StrokeShape="RoundRectangle 8"
+                            StrokeThickness="0"
+                            HorizontalOptions="Fill">
+
+                        <StackLayout Spacing="25">
+
+                            <Label Text="{Binding Title}" FontSize="24" FontAttributes="Bold" TextColor="#38761d" HorizontalOptions="Center" Margin="0, 0, 0, 20"/>
+                            <StackLayout Spacing="15">
+                                <StackLayout Orientation="Horizontal">
+                                    <Label Text="Descrição:" FontAttributes="Bold" Margin="0, 0, 10, 0" TextColor="Black" VerticalOptions="Start"/>
+                                    <Label Text="{Binding Description}" TextColor="Black" VerticalOptions="Start" LineBreakMode="WordWrap"/>
+                                </StackLayout>
+                                <FlexLayout Direction="Row" AlignItems="Center" JustifyContent="Start">
+                                    <Label Text="Data de Criação:" FontAttributes="Bold" Margin="0, 0, 10, 0" TextColor="Black"/>
+                                    <Label Text="{Binding CreateAt, StringFormat='{0:dd/MM/yyyy}'}" TextColor="Black"/>
+                                </FlexLayout>
+                                <FlexLayout Direction="Row" AlignItems="Center" JustifyContent="Start">
+                                    <Label Text="Prioridade:" FontAttributes="Bold" Margin="0, 0, 10, 0" TextColor="Black"/>
+                                    <Label Text="{Binding Priority}" FontAttributes="Bold" TextColor="#38761d"/>
+                                </FlexLayout>
+                            </StackLayout>
+                            <HorizontalStackLayout HorizontalOptions="End" Margin="0, 30, 0, 0" Spacing="10">
+                                <Button Text="Editar" Clicked="OnEditarClick" BackgroundColor="#38761d" TextColor="White" CornerRadius="4" HeightRequest="40" WidthRequest="100"/>
+                                <Button Text="Excluir" Clicked="OnExcluirClick" BackgroundColor="#6E6E6E" TextColor="White" CornerRadius="4" HeightRequest="40" WidthRequest="100"/>
+                            </HorizontalStackLayout>
+
+                        </StackLayout>
+                    </Border>
+                </Grid>
+
+            </Grid>
+        </ScrollView>
+
+        <Border AbsoluteLayout.LayoutFlags="PositionProportional, WidthProportional"
+                AbsoluteLayout.LayoutBounds="0.5, 1, 1, AutoSize"
+                BackgroundColor="#38761d"
+                StrokeThickness="0" 
+                Padding="10, 8">
+            <Label Text="Desenvolvido por Laysa Bernardes - CB3024873 e  Lucas Lopes - CB3025284"
+                 FontSize="12"
+                 TextColor="White"
+                 HorizontalOptions="Center"
+                 VerticalOptions="Center"
+                 HorizontalTextAlignment="Center"
+                 Margin="0" />
+
+        </Border>
+
+    </AbsoluteLayout>
+</ContentPage>
