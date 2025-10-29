@@ -1,0 +1,73 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="TarefasApp.Pages.EditPage"
+             Title="Editar"
+             BackgroundColor="#f3fcf2">
+    <AbsoluteLayout>
+
+        <ScrollView AbsoluteLayout.LayoutFlags="All"
+                    AbsoluteLayout.LayoutBounds="0, 0, 1, 1"
+                    Padding="20, 10">
+            <Border BackgroundColor="White"
+                    StrokeShape="RoundRectangle 8"
+                    StrokeThickness="0"
+                    Padding="30"
+                    HorizontalOptions="Center" 
+                    VerticalOptions="CenterAndExpand">
+                <StackLayout Spacing="25">
+
+                    <Label Text="Editar Tarefa" 
+                           FontAttributes="Bold" 
+                           FontSize="24"
+                           TextColor="#38761d"
+                           HorizontalOptions="Center"
+                           Margin="0, 0, 0, 20"/>
+
+                    <FlexLayout HeightRequest="80" Direction="Row" AlignItems="Center" JustifyContent="Start" >
+                        <Label Text="Título:" FontAttributes="Bold" FontSize="Subtitle" Margin="0, 0, 5, 0"/>
+                        <Entry x:Name="txtTitle" WidthRequest="290" TextColor="{StaticResource Gray300}" Text="{Binding Title}" />
+                    </FlexLayout>
+
+                    <FlexLayout HeightRequest="80" Direction="Row" AlignItems="Center" JustifyContent="Start" >
+                        <Label Text="Descrição:" FontAttributes="Bold" FontSize="Subtitle" Margin="0, 0, 5, 0"/>
+                        <Entry x:Name="txtDescription" WidthRequest="250" TextColor="{StaticResource Gray300}" Text="{Binding Description}" />
+                    </FlexLayout>
+
+                    <FlexLayout HeightRequest="80" Direction="Row" AlignItems="Center" JustifyContent="Start" >
+                        <Label Text="Data de Criação:" FontAttributes="Bold" FontSize="Subtitle" Margin="0, 0, 5, 0"/>
+                        <DatePicker Grid.Row="5" x:Name="txtCreated" WidthRequest="200" Date="{Binding CreateAt}" TextColor="{StaticResource Gray300}" />
+                    </FlexLayout>
+
+                    <FlexLayout HeightRequest="80" Direction="Row" AlignItems="Center" JustifyContent="Start" >
+                        <Label Text="Prioridade:" FontAttributes="Bold" FontSize="Subtitle" Margin="0, 0, 5, 0"/>
+                        <Entry x:Name="txtPriority" Keyboard="Numeric" WidthRequest="250" TextColor="{StaticResource Gray300}" Text="{Binding Priority}" />
+                    </FlexLayout>
+
+                    <HorizontalStackLayout HorizontalOptions="End" Margin="0, 30, 0, 0" Spacing="10">
+                        <Button Text="Salvar" Clicked="onEdit" BackgroundColor="#38761d" TextColor="White" CornerRadius="4" HeightRequest="40" WidthRequest="100"/>
+                        <Button Text="Cancelar" Clicked="onCancel" BackgroundColor="#6E6E6E" TextColor="White" CornerRadius="4" HeightRequest="40" WidthRequest="100"/>
+                    </HorizontalStackLayout>
+
+                </StackLayout>
+            </Border>
+
+        </ScrollView>
+
+        <Border AbsoluteLayout.LayoutFlags="PositionProportional, WidthProportional"
+                AbsoluteLayout.LayoutBounds="0.5, 1, 1, AutoSize"
+                BackgroundColor="#38761d"
+                StrokeThickness="0" 
+                Padding="10, 8">
+            <Label Text="Desenvolvido por Laysa Bernardes - CB3024873 e Lucas Lopes - CB3025284"
+                   FontSize="12"
+                   TextColor="White"
+                   HorizontalOptions="Center"
+                   VerticalOptions="Center"
+                   HorizontalTextAlignment="Center"
+                   Margin="0" />
+
+        </Border>
+
+    </AbsoluteLayout>
+</ContentPage>
