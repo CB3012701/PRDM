@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<ResourceDictionary xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
+                    xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml">
+    <Style x:Key="EntryStyle"
+         TargetType="Entry">
+        <Setter Property="Margin"
+            Value="0,10,0,0"/>
+        <Setter Property="PlaceholderColor"
+            Value="Gray"/>
+    </Style>
+    <Style x:Key="ButtonStyle"
+         TargetType="Button">
+        <Setter Property="Margin"
+            Value="0,20,0,0"/>
+        <Setter Property="BackgroundColor"
+            Value="LightBlue"/>
+        <Setter Property="TextColor"
+            Value="White"/>
+    </Style>
+</ResourceDictionary>

@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="TP03.ResultadosPage"
+             Title="ResultadosPage">
+    <ContentPage.Resources>
+        <ResourceDictionary Source="Styles.xaml"/>
+    </ContentPage.Resources>
+    <StackLayout>
+        <Frame Style="{StaticResource CardStyle}">
+            <StackLayout>
+                <Label Text="Detalhes do Pacote"
+                       Style="{StaticResource TitleLabelStyle}"/>
+                <Label Text="ID do Pacote: "/>
+                <Label Text="{Binding Pacote.PacoteId}"
+                       Style="{StaticResource BoldLabelStyle}"/>
+                <Label Text="Status: "/>
+                <Label Text="{Binding Pacote.Status}"
+                       Style="{StaticResource BoldLabelStyle}"/>
+                <Label Text="Data de Envio: "/>
+                <Label Text="{Binding Pacote.DataEnvio}"
+                       Style="{StaticResource BoldLabelStyle}"/>
+                <Label Text="Data Prevista de Entrega: "/>
+                <Label Text="{Binding Pacote.DataPrevistaEntrega}"
+                       Style="{StaticResource BoldLabelStyle}"/>
+            </StackLayout>
+        </Frame>
+        <Frame Style="{StaticResource CardStyle}">
+            <StackLayout>
+                <Label Text="Histórico de Eventos"
+                       Style="{StaticResource SectionTitleLabelStyle}"/>
+                <ListView ItemsSource="{Binding Pacote.HistoricoEventos}">
+                    <ListView.ItemTemplate>
+                        <DataTemplate>
+                            <ViewCell>
+                                <StackLayout>
+                                    <Label Text="{Binding}"/>
+                                </StackLayout>
+                            </ViewCell>
+                        </DataTemplate>
+                    </ListView.ItemTemplate>
+                </ListView>
+            </StackLayout>
+        </Frame>
+        <Button Text="Voltar"
+                Clicked="OnBackClicked"
+                Style="{StaticResource ButtonStyle}"/>
+    </StackLayout>
+</ContentPage>
