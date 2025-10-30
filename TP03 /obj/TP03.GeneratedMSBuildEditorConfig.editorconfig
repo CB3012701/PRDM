@@ -1,0 +1,67 @@
+is_global = true
+build_property.EnableAotAnalyzer = 
+build_property.EnableSingleFileAnalyzer = true
+build_property.EnableTrimAnalyzer = false
+build_property.IncludeAllContentForSelfExtract = 
+build_property.TargetFramework = net9.0-android
+build_property.TargetPlatformMinVersion = 
+build_property.UsingMicrosoftNETSdkWeb = 
+build_property.ProjectTypeGuids = 
+build_property.InvariantGlobalization = false
+build_property.PlatformNeutralAssembly = 
+build_property.EnforceExtendedAnalyzerRules = 
+build_property._SupportedPlatformList = Linux,macOS,Windows
+build_property.RootNamespace = TP03
+build_property.ProjectDir = C:\Users\aluno\Downloads\CBTPRDM vin-master\CBTPRDM-master\TP03\TP03\
+build_property.EnableComHosting = 
+build_property.EnableGeneratedComInterfaceComImportInterop = 
+build_property.EffectiveAnalysisLevelStyle = 9.0
+build_property.EnableCodeStyleSeverity = 
+
+[C:/Users/aluno/Downloads/CBTPRDM vin-master/CBTPRDM-master/TP03/TP03/App.xaml]
+build_metadata.AdditionalFiles.GenKind = Xaml
+build_metadata.AdditionalFiles.ManifestResourceName = TP03.App.xaml
+build_metadata.AdditionalFiles.TargetPath = App.xaml
+build_metadata.AdditionalFiles.RelativePath = App.xaml
+
+[C:/Users/aluno/Downloads/CBTPRDM vin-master/CBTPRDM-master/TP03/TP03/AppShell.xaml]
+build_metadata.AdditionalFiles.GenKind = Xaml
+build_metadata.AdditionalFiles.ManifestResourceName = TP03.AppShell.xaml
+build_metadata.AdditionalFiles.TargetPath = AppShell.xaml
+build_metadata.AdditionalFiles.RelativePath = AppShell.xaml
+
+[C:/Users/aluno/Downloads/CBTPRDM vin-master/CBTPRDM-master/TP03/TP03/MainPage.xaml]
+build_metadata.AdditionalFiles.GenKind = Xaml
+build_metadata.AdditionalFiles.ManifestResourceName = TP03.MainPage.xaml
+build_metadata.AdditionalFiles.TargetPath = MainPage.xaml
+build_metadata.AdditionalFiles.RelativePath = MainPage.xaml
+
+[C:/Users/aluno/Downloads/CBTPRDM vin-master/CBTPRDM-master/TP03/TP03/MainPageStyles.xaml]
+build_metadata.AdditionalFiles.GenKind = Xaml
+build_metadata.AdditionalFiles.ManifestResourceName = TP03.MainPageStyles.xaml
+build_metadata.AdditionalFiles.TargetPath = MainPageStyles.xaml
+build_metadata.AdditionalFiles.RelativePath = MainPageStyles.xaml
+
+[C:/Users/aluno/Downloads/CBTPRDM vin-master/CBTPRDM-master/TP03/TP03/Resources/Styles/Colors.xaml]
+build_metadata.AdditionalFiles.GenKind = Xaml
+build_metadata.AdditionalFiles.ManifestResourceName = TP03.Resources.Styles.Colors.xaml
+build_metadata.AdditionalFiles.TargetPath = Resources\Styles\Colors.xaml
+build_metadata.AdditionalFiles.RelativePath = Resources\Styles\Colors.xaml
+
+[C:/Users/aluno/Downloads/CBTPRDM vin-master/CBTPRDM-master/TP03/TP03/Resources/Styles/Styles.xaml]
+build_metadata.AdditionalFiles.GenKind = Xaml
+build_metadata.AdditionalFiles.ManifestResourceName = TP03.Resources.Styles.Styles.xaml
+build_metadata.AdditionalFiles.TargetPath = Resources\Styles\Styles.xaml
+build_metadata.AdditionalFiles.RelativePath = Resources\Styles\Styles.xaml
+
+[C:/Users/aluno/Downloads/CBTPRDM vin-master/CBTPRDM-master/TP03/TP03/ResultadosPage.xaml]
+build_metadata.AdditionalFiles.GenKind = Xaml
+build_metadata.AdditionalFiles.ManifestResourceName = TP03.ResultadosPage.xaml
+build_metadata.AdditionalFiles.TargetPath = ResultadosPage.xaml
+build_metadata.AdditionalFiles.RelativePath = ResultadosPage.xaml
+
+[C:/Users/aluno/Downloads/CBTPRDM vin-master/CBTPRDM-master/TP03/TP03/Styles.xaml]
+build_metadata.AdditionalFiles.GenKind = Xaml
+build_metadata.AdditionalFiles.ManifestResourceName = TP03.Styles.xaml
+build_metadata.AdditionalFiles.TargetPath = Styles.xaml
+build_metadata.AdditionalFiles.RelativePath = Styles.xaml
