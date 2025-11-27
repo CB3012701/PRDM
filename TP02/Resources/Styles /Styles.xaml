@@ -480,7 +480,7 @@
 
             <Label AbsoluteLayout.LayoutFlags="PositionProportional, WidthProportional"
                AbsoluteLayout.LayoutBounds="0.5, 1, 1, AutoSize"
-               Text="Desenvolvido por Laysa Bernardes CB3024873 e Lucas Lopes "
+               Text="Desenvolvido por Érica Barbosa Pereira Lobo "
                FontSize="12"
                TextColor="#6E6E6E"
                HorizontalTextAlignment="Center"
