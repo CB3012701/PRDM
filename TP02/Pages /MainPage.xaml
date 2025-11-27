@@ -57,7 +57,7 @@
                 BackgroundColor="#38761d"
                 StrokeThickness="0" 
                 Padding="10, 8">
-            <Label Text="Desenvolvido por Laysa Bernardes - CB3024873 e Lucas Lopes - CB3025284"
+            <Label Text="Desenvolvido por Érica Barbosa Pereira Lobo CB3012701"
                    FontSize="12"
                    TextColor="White"
                    HorizontalOptions="Center"
