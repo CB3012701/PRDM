@@ -28498,24 +28498,24 @@
     ]
   },
   "packageFolders": {
-    "C:\\Users\\Lucas\\.nuget\\packages\\": {},
+    "C:\\Users\\erica\.nuget\\packages\\": {},
     "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages": {}
   },
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\Users\\Lucas\\source\\repos\\IFSP_6_PRDM\\PO2\\P02.csproj",
+      "projectUniqueName": "C:\\Users\\erica\\source\\repos\\IFSP_6_PRDM\\PO2\\P02.csproj",
       "projectName": "P02",
-      "projectPath": "C:\\Users\\Lucas\\source\\repos\\IFSP_6_PRDM\\PO2\\P02.csproj",
-      "packagesPath": "C:\\Users\\Lucas\\.nuget\\packages\\",
-      "outputPath": "C:\\Users\\Lucas\\source\\repos\\IFSP_6_PRDM\\PO2\\obj\\",
+      "projectPath": "C:\\Users\\erica\\source\\repos\\IFSP_6_PRDM\\PO2\\P02.csproj",
+      "packagesPath": "C:\\Users\\erica\\.nuget\\packages\\",
+      "outputPath": "C:\\Users\\erica\\source\\repos\\IFSP_6_PRDM\\PO2\\obj\\",
       "projectStyle": "PackageReference",
       "crossTargeting": true,
       "fallbackFolders": [
         "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
       ],
       "configFilePaths": [
-        "C:\\Users\\Lucas\\AppData\\Roaming\\NuGet\\NuGet.Config",
+        "C:\\Users\\erica\\AppData\\Roaming\\NuGet\\NuGet.Config",
         "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.FallbackLocation.config",
         "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
       ],
